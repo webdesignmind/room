@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Room</title>
 </head>
@@ -211,28 +212,27 @@
 
   <section class="slider">
     <div class="container">
-      <div class="slider-container">
+      <!-- Slider main container -->
+      <div class="swiper-container">
         <!-- Additional required wrapper -->
-        <div class="slider-wrapper">
+        <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="slider-slide">
-            <img src="img/slide-1.jpg" alt="slide-1" class="slider-slide__img">
+          <div class="swiper-slide">
+            <img src="img/slide-1.jpg" alt="slide" class="swiper-slide__img">
           </div>
-          <div class="slider-slide">
-            <img src="img/slide-1.jpg" alt="slide-1" class="slider-slide__img">
+          <div class="swiper-slide">
+            <img src="img/slide-2.jpg" alt="slide" class="swiper-slide__img">
           </div>
-          <div class="slider-slide">
-            <img src="img/slide-1.jpg" alt="slide-1" class="slider-slide__img">
+          <div class="swiper-slide">
+            <img src="img/slide-3.jpg" alt="slide" class="swiper-slide__img">
           </div>
         </div>
         <!-- If we need pagination -->
         <div class="slider-pagination"></div>
 
         <!-- If we need navigation buttons -->
-        <button class="slider-button slider-button-prev">
-        </button>
-        <button class="slider-button slider-button-next">
-        </button>
+        <button class="slider-button slider-button-prev"></button>
+        <button class="slider-button slider-button-next"></button>
 
       </div>
     </div>
@@ -288,11 +288,175 @@
         </div>
       </div>
       <!-- ./offer-wrapper -->
-
     </div>
     <!-- /.wrapper -->
   </section>
   <!-- /.offer -->
+
+  <section class="review">
+    <div class="container">
+      <div class="review-container">
+
+        <div class="review-item">
+          <div class="review-item__stars">
+            <img src="img/star.svg" alt="icon:star" class="review-item__star">
+            <img src="img/star.svg" alt="icon:star" class="review-item__star">
+            <img src="img/star.svg" alt="icon:star" class="review-item__star">
+            <img src="img/star.svg" alt="icon:star" class="review-item__star">
+            <img src="img/star.svg" alt="icon:star" class="review-item__star">
+          </div>
+          <div class="review-item__text">
+            “We can now have <br class="br"> meetings in peace.”
+          </div>
+          <img src="img/google.png" alt="icon:google" class="review-item__logo">
+        </div>
+
+        <div class="review-item">
+          <div class="review-item__stars">
+            <img src="img/star.svg" alt="icon:star" class="review-item__star">
+            <img src="img/star.svg" alt="icon:star" class="review-item__star">
+            <img src="img/star.svg" alt="icon:star" class="review-item__star">
+            <img src="img/star.svg" alt="icon:star" class="review-item__star">
+            <img src="img/star.svg" alt="icon:star" class="review-item__star">
+          </div>
+          <div class="review-item__text">“Amazing private space <br class="br"> to get work done.”</div>
+          <img src="img/wayfair.png" alt="icon:wayfair" class="review-item__logo">
+        </div>
+
+        <div class="review-item">
+          <div class="review-item__stars">
+            <img src="img/star.svg" alt="icon:star" class="review-item__star">
+            <img src="img/star.svg" alt="icon:star" class="review-item__star">
+            <img src="img/star.svg" alt="icon:star" class="review-item__star">
+            <img src="img/star.svg" alt="icon:star" class="review-item__star">
+            <img src="img/star.svg" alt="icon:star" class="review-item__star">
+          </div>
+
+          <div class="review-item__text">“Our booths are in <br class="br"> constant use.”</div>
+          <img src="img/flexport.png" alt="icon:flexport" class="review-item__logo">
+        </div>
+
+        <button class="review-button">READ MORE REVIEWS</button>
+
+      </div>
+      <!-- /.review-container -->
+
+      <section class="advantages">
+        <div class="container">
+          <h2 class="advantages-title">
+            We take a human approach to a business-to-business industry, breaking the boundaries between corporate and
+            personal, and rethinking every step of the user experience along the way.
+          </h2>
+          <p class="advantages-subtitle">
+            We make work, work for you.
+          </p>
+          <div class="advantages-wrapper">
+            <div class="advantages-wrapper__item">
+              <img src="img/photo-1.jpg" alt="photo:advantages-1" class="advantages-wrapper__img">
+              <div class="advantages-wrapper__text">
+                <p class="advantages-wrapper__title">
+                  We sell direct.
+                </p>
+                <p class="advantages-wrapper__subtitle">
+                  We make extra room in the budget without compromising quality by selling direct. No middle man, and no
+                  additional construction required.
+                </p>
+              </div>
+            </div>
+            <div class="advantages-wrapper__item advantages-wrapper__item--reverse">
+              <img src="img/photo-2.jpg" alt="photo:advantages-2" class="advantages-wrapper__img">
+              <div class="advantages-wrapper__text">
+                <p class="advantages-wrapper__title">
+                  We build with purpose.
+                </p>
+                <p class="advantages-wrapper__subtitle">
+                  We’re not just building another room with four walls, we’re building a more productive workspace. We
+                  design with you in mind, looking at every detail as an opportunity to enable a better working
+                  environment for everyone.
+                </p>
+              </div>
+            </div>
+            <div class="advantages-wrapper__item">
+              <img src="img/photo-3.jpg" alt="photo:advantages-3" class="advantages-wrapper__img">
+              <div class="advantages-wrapper__text">
+                <p class="advantages-wrapper__title">
+                  We design sustainably.
+                </p>
+                <p class="advantages-wrapper__subtitle">
+                  From design to delivery, we strive to lessen our impact on the environment. Our products are
+                  engineered with recycled materials and replace multiple cycles of construction, minimizing noise and
+                  our footprint.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- /.advantages-wrapper -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.advantages -->
+
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.review -->
+
+  <section class="slider">
+    <div class="container">
+      <!-- Slider main container -->
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="img/slider-4.jpg" alt="slide" class="swiper-slide__img">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/slide-2.jpg" alt="slide" class="swiper-slide__img">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/slide-3.jpg" alt="slide" class="swiper-slide__img">
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="slider-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <button class="slider-button slider-button-prev"></button>
+        <button class="slider-button slider-button-next"></button>
+
+      </div>
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.slider -->
+
+  <section class="risk">
+    <div class="container">
+      <div class="risk-wrapper">
+        <h2 class="risk-wrapper__title">100 day risk-free trial</h2>
+        <div class="risk-cards">
+          <div class="risk-cards__item">
+            <img src="img/shipping.svg" alt="shipping" class="risk-cards__img">
+            <p class="risk-cards__title">FREE SHIPPING</p>
+          </div>
+          <div class="risk-cards__item">
+            <img src="img/plug-play.svg" alt="plug-play" class="risk-cards__img">
+            <p class="risk-cards__title">PLUG & PLAY</p>
+          </div>
+          <div class="risk-cards__item">
+            <img src="img/return.svg" alt="return" class="risk-cards__img">
+            <p class="risk-cards__title">FREE RETURNS</p>
+          </div>
+        </div>
+        <button class="risk-button">GET A ROOM</button>
+        <p class="risk-descr">Terms & Conditions apply</p>
+      </div>
+      <!-- /.risk-wrapper -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.risk -->
 
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
